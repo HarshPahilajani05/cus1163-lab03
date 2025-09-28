@@ -114,7 +114,7 @@ void producer_process(int write_fd, int start_num) {
         usleep(100000);
     }
 
-    printf("[Producer %d] done sending values\n", NUM_VALUES);
+    printf("[Producer %d] done sending values\n", getpid());
     close(write_fd);
     exit(0);
 }
